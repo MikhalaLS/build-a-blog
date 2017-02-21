@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Blogzzz</title>
+    </head>
+
+    <body>
+        <h1>Blogzzz</h1>
+
+
+    <hr>
+
+        {% for i in posts %}
+            <div class="post">
+                <a class="post-title" href="blog/{{ i.key().id() }}">{{ i.title }}</a>
+                <pre class="post-body">{{i.post}}</pre>
+        {% endfor %}
+
+
+    </body>
+</html>
